@@ -9,6 +9,7 @@ environment ENV.fetch("HANAMI_ENV", "development")
 workers     ENV.fetch("HANAMI_WEB_CONCURRENCY", 2)
 
 on_worker_boot do
+  # NOTE: calls #stop for each provider
   Hanami.shutdown
 end
 

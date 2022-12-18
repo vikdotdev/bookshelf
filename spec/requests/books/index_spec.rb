@@ -1,5 +1,3 @@
-require 'pry'
-
 RSpec.describe "GET /books", type: [:request, :database] do
   let(:books) { app["persistence.rom"].relations[:books] }
 

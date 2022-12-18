@@ -33,7 +33,6 @@ group :development do
 end
 
 group :test do
-  gem "rack-test"
   gem "database_cleaner-sequel"
   gem "rack-test"
 end
